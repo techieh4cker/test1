@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport">
+  <title>Parallax2k22-IET</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .glowing{
+      text-transform: uppercase;
+      color:rgb(0, 0, 0);
+      font-size:8em;
+      position:absolute;
+      top:18%;
+      left: 50%;
+      align-items: center;
+      transform: translate(-50%,-50%);
+      margin:0;
+      text-shadow:0px -1px 2px white,
+      0px -3px 6px rgba(242,125,12,1),
+      0px -6px 12px rgba(255,150,100,1),
+      0px -10px 20px rgba(242,125,12,1),
+      0px -15px 30px rgba(255,50,50,1),
+      0px -21px 42px rgba(240,127,19,1);
+      animation:effect 0.01s ease infinite, colorChange 10s linear infinite;
+    } 
+    @keyframes effect {
+    50%{
+      text-shadow:0px -4px 8px white,
+      0px -12px 24px rgba(242,125,12,1),
+      0px -24px 48px rgba(255,150,100,1),
+      0px -40px 80px rgba(242,125,12,1),
+      0px -60px 120px rgba(255,50,50,1),
+      0px -84px 168px rgba(240,127,19,1);
+    }      
+    }
+    @keyframes colorChange {
+      to{filter:hue-rotate(360deg)}
+    }
+    .dropbtn {
+      background-color:black;
+      cursor: pointer;
+      color: rgb(238, 255, 0);
+      margin-left: 334%;
+      align-items:initial;
+      padding: 25px;
+      font-size: 20px;
+      border: none;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      margin-left: 222%;
+      text-align: center;
+      display: none;
+      position: absolute;
+      background-color: black;
+      min-width: 160px;
+      z-index: 1;
+      padding-left: 0px;
+      border-radius: 10px;
+    } 
+    .dropdown-content a {
+      border: 2px solid  rgb(34, 255, 0);
+      color: rgb(34, 255, 0);
+      width: 290px;
+      font-size: 30px;
+      padding: 20px 0px;
+      text-decoration: none;
+      display: block;
+      border-radius: 6px;
+    }
+    .dropdown-content a:hover {background-color: rgb(47, 255, 0);
+    color:black;}
+    .dropdown:hover .dropdown-content {display: block;}
+    .dropdown:hover .dropbtn {border-radius: 6px;background-color: black;}
+    </style>
+    <script>
+      var countDownDate = new Date("Oct 15, 2022 9:0:0").getTime();
+  var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+  }, 1000);
+    </script>
+</head>
+<body>
+<div id="header">
+  <img id="logo" src="iet.png" height="70" alt="logo">
+  <div>
+  </div><div class="dropdown">
+    <button class="dropbtn"><img src="menu.png" height="77" > </button>
+    <div class="dropdown-content">
+      <a href="#tech">TECH</a>
+      <a href="#nontech">NON-TECH</a>
+      <a href="#foot">CONTACT</a>
+    </div>
+  </div>
+</div>
+<div id="particles-js"><script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<p id="blink">
+  KONGU ENGINEERING COLLEGE presents
+</p>
+<h1 class="glowing">Parallax'2k22</h1> 
+<!-- <figure>
+	<h1 color="green">Parallax2k22</h1>
+  <h1 color="green">Parallax2k22</h1>
+  <h1 color="green">Parallax2k22</h1>
+  <h1 color="green">Parallax2k22</h1>
+  <h1 color="green">Parallax2k22</h1>
+  <h1 color="green">Parallax2k22</h1>
+  <h1 color="green">Parallax2k22</h1>
+  <h1 color="green">Parallax2k22</h1>
+  <h1 color="green">Parallax2k22</h1>
+  <h1 color="green">Parallax2k22</h1>
+  <h1 color="green">Parallax2k22</h1>
+</figure> -->
+<p id="demo"></p>
+  <script src="script.js"></script>
+  <div id="tech">
+    <img id="event" src="tech.webp">
+    <h3>TECHNICAL </h3>
+    <p id="technote">Imagination is more important than knowledge.  
+      For knowledge is limited, whereas imagination embraces the entire world, 
+      stimulating progress, giving birth to evolution<span style="color:red"> - Albert Einstein<span></span></p>
+      <a id="techbtn" href="Under development.....">Explore more</a><br><br>
+  </div>
+  <div id="nontech">
+    <img id="event" src="nontech.webp">
+    <h3>NON-TECHNICAL </h3>
+    <p id="technote"> People read into the music. I have a feeling that they can believe that 
+      I'm trying to put some emotion forward. It's not just some technical exercise <span  style="color:red">- Kieran Hebden<span></span></p>
+      <a id="techbtn" href="Under development.....">Explore more</a><br><br>
+  </div>
+  <div id="footer">
+  <div id="contact">
+    <h3>CONTACT US</h3>
+  </div>
+  <div id="foot">
+    <div>
+     <a href="https://instagram.com/iet_oncampus_kec?igshid=YmMyMTA2M2Y="> <img src="insta.png" height="100"> </a>
+      <p>@iet_oncampus_kec</p>
+    </div>
+    <div>
+    <a href="mailto:Parallax2k22.iet@gmail.com"> <img src="email.png" height="100"> </a>
+      <p>Parallax2k22.iet@gmail.com</p>
+    </div>
+    <div id="phone">
+    <a href="wa.me/+919894707815"> <img src="phone.png" height="100"> </a>
+      <p>+91 98947 07815</p>
+      <p>+91 97902 99559</p>
+    </div>
+  </div>
+  <div id="kec">
+    <img src="kec.png" height="70">
+    <h3>Kongu Engineering College <span  style="color:red">(Autonomous)</span></h3>
+    <h3>Affilicated to Anna University | Accredited by A++ Grade</h3>
+    <h3>Mobile: 9965277765 / 9443020583</h3>
+    <h3>Department of Electrical and Electronics Engineering</h3>
+    <br>
+  </div>
+</div>
+  <div id="karthi">
+   <h3>Created by <a href="https://instagram.com/0xkarthi?igshid=YmMyMTA2M2Y=">KARTHIKEYAN K</a></h3>
+   Copyright &copy;2022
+  </div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+  html{
+    scroll-behavior: smooth;
+  }
+  body{
+      padding: 0;
+      margin: 0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+    #particles-js {
+      background-color: #0a0a0a;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      white-space:initial;
+      position: static;
+  }
+  #demo{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    position: absolute;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 35%;
+    padding: 30px;
+  }
+  #blink{
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    animation: blinker 1.5s linear infinite;
+    color: rgb(255, 255, 255);
+    transition: 1s;
+    margin-top: 50px;
+    margin-left: 200px;
+  }
+  @keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+  }
+  #eventname{
+    color: aqua;
+  }
+  #header{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    
+  }
+  #logo{
+    margin: 30px 20px;
+  }
+  
+  /* h1 {
+    animation:glow 10s ease-in-out infinite;
+  }
+  * { box-sizing:border-box; }
+  
+  h1 {
+    overflow:hidden;
+    text-align:center;
+  }
+  figure {
+    margin: 0;
+    animation:wobble 2s ease-in-out infinite;
+    transform-origin:center center;
+    transform-style:preserve-3d;
+  }
+  
+  @keyframes wobble {
+    0%,100%{ transform:rotate3d(1,1,0,40deg); }
+    25%{ transform:rotate3d(-1,1,0,40deg); }
+    50%{ transform:rotate3d(-1,-1,0,40deg); }
+    75%{ transform:rotate3d(1,-1,0,40deg); }
+  }
+  
+  h1 {
+    display:block;
+    width:100%;
+    padding:40px;
+    line-height:1.5;
+    font-size: 100px ;
+    text-transform:uppercase;
+    font-family: 'Tangerine', serif;
+    position:absolute;
+    font-weight: 900;
+    margin-top: 100px;
+    
+  }
+  
+  @keyframes glow {
+    0%,100%{ text-shadow:0 0 30px red; }
+    25%{ text-shadow:0 0 30px orange; }
+    50%{ text-shadow:0 0 30px rgb(2, 255, 2); }
+    75%{ text-shadow:0 0 30px cyan; }
+  }
+  
+  h1:nth-child(2){ transform:translateZ(5px); }
+  h1:nth-child(3){ transform:translateZ(10px);}
+  h1:nth-child(4){ transform:translateZ(15px); }
+  h1:nth-child(5){ transform:translateZ(20px); }
+  h1:nth-child(6){ transform:translateZ(25px); }
+  h1:nth-child(7){ transform:translateZ(30px); }
+  h1:nth-child(8){ transform:translateZ(35px); }
+  h1:nth-child(9){ transform:translateZ(40px); }
+  h1:nth-child(10){ transform:translateZ(45px); 
+} */
+#tech{
+  color:  rgb(34, 255, 0);
+  background-color:black;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-size: 60px;
+}
+#technote{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+}
+#nontech{
+  color: rgb(34, 255, 0);
+  background-color: black;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-size: 60px;
+}
+#event{
+  width: 100%;
+}
+#techbtn{
+  background-color: #0a0a0a;
+  color: rgb(94, 255, 0);
+  height: 80px;
+  width:320px;
+  border-radius: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  border: 4px solid rgb(94, 255, 0);
+  text-decoration: none;
+  padding: 20px;
+}
+#techbtn:hover{
+  color:black;
+  background-color: rgb(94, 255, 0); 
+}
+#contact{
+  color: white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-size: 60px;
+}
+#foot{
+  font-family: Arial, Helvetica, sans-serif;;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  background-color: rgb(94, 255, 0);
+}
+#phone{
+  margin-top: 6%;
+}
+#kec{
+  color:rgb(0, 0, 0);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(94, 255, 0);
+}
+#karthi{
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  font-size:25px;
+  font-weight: 40px;
+  color:  rgb(255, 255, 255);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#karthi a{
+  color:  rgb(94, 255, 0);
+  font-size: 40px;
+}
